@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-color:rgb(238,238,238);
+    --primary-color:rgb(216,60,60);
+}
+html{
+    font-size: 14px;
+}
+body{
+    background-color: var(--bg-color);
+    font-weight: 400;
+    font-family: 'Taviraj', serif;
+    
+}
+
+header {
+    font-size: 16px;
+    background-color: white;
+}
+header .navbar{
+    background-color: white !important;
+
+}
+header .navbar .nav-link,header .navbar .nav-item,.dropdown-item{
+    color: black !important;
+    font-weight: 300;
+}
+header .navbar form input{
+    background-color: var(--bg-color);
+    border-top-left-radius: 3px ;
+    border-bottom-left-radius: 3px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 5px 10px ;
+    width: 300px;
+}
+header .navbar form button{
+    background-color: var(--bg-color);
+    padding:5px 10px ;
+    border: 1px solid gray;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border-top-right-radius: 3px ;
+    border-bottom-right-radius: 3px;
+}
+.owl-carousel .item-book{
+    position: relative;
+    display: block;
+}
+.owl-carousel .item-book .name{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(1, 1, 1, 0.5);
+    width: 100%;
+    text-align: center;
+}
+.main .content h5{
+    background-color: rgb(74,74,74);
+    color: white;
+    padding: 7px;
+    font-weight: 300;
+}
+.main .content-left .item{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 4px;
+}
+.main .content-left .item img{
+    width: 100px;
+    height: 150px;
+    padding: 2px;
+    border: 1px solid gray ;
+}
+.main .content-left .item .inf{
+    padding-left: 10px;
+}
+.main .content-left .item .inf .name{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+.main .content-right{
+    position: static;
+    top: 0;
+}
+.main .content-left, .main .content-right{
+    background-color: white;
+}
+.main .content-right a{
+    display:block;
+    border-bottom: 1px solid gray;
+    padding:5px  20px;
+    color: rgb(74,74,74);
+    transition: all 0.3s;
+}
+.main .content-right a:hover{
+    padding-left: 40px;
+    color: var(--primary-color);
+
+}
+.footer{
+    background-color: rgb(74,74,74);
+    margin-top: 50px;
+}
+.footer p{
+    padding: 20px;
+    color: white;
+}
+.breadcrumb{
+    background-color: rgb(68,66,66);
+    margin-bottom: 0;
+}
+.footer-bot{
+    background-color: rgb(68,66,66);
+}
+.footer-bot a{
+    color: white;
+}
+/* detail */
+.item-detail{
+    padding: 10px 10px 50px 10px;
+    display: flex;
+    border-bottom: 1px dashed    var(--primary-color);
+}
+.item-detail img{
+    width: 200px;
+    height: auto;
+}
+.item-detail .inf{
+    margin-left: 20px;
+}
+.item-detail .inf .name{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.item-detail .inf .author,
+.item-detail .inf .cate,
+.item-detail .inf .chapter-number{
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.item-detail .inf a{
+    color: white;
+    margin-top: 30px;
+}
+.summary{
+    padding: 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+.summary h6{
+    color: var(--primary-color);
+}
+.list-chapter{
+    padding: 10px;
+}
+.list-chapter h6{
+    color: var(--primary-color);
+}
+.list-chapter a{
+    display: block;
+    color: rgb(74,74,74);
+}
+/* read */
+.content .name{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-align: center;
+}
+.content p{
+    padding: 10px;
+    text-align: justify ;
+    font-size: 16px;
+    line-height: 50px;
+}
