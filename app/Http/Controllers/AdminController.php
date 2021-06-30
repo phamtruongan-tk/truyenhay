@@ -37,7 +37,8 @@ class AdminController extends Controller
         return Redirect::route('getLogin');
     }
     public function getDashBoard(){
-        return view('backend.pages.dashboard');
+        $data['books'] = Book::orderBy('b_view','desc')->take(20)->get();
+        return view('backend.pages.dashboard',$data);
     }
 
     public function getBookByCate($c_id){
